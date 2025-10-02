@@ -1,0 +1,43 @@
+# =====================================================
+# Chromium Theme — Alternity
+# =====================================================
+
+# --- Darker Neutrals ---
+frame_color              = rgb(10,10,10)      # #0A0A0A  frame
+toolbar                  = rgb(15,15,18)      # #0F0F12  toolbar
+tab_active_background    = rgb(20,20,24)      # #141418  active tab bg
+tab_inactive_background  = rgb(10,10,10)      # #0A0A0A  inactive tab bg
+
+# --- Borders / indicators ---
+tab_active_border_bottom   = rgb(85,79,224)   # #554FE0  purple accent
+tab_inactive_border_bottom = rgb(15,15,18)   # #0F0F12  neutral
+
+# --- Text ---
+tab_active_text     = rgb(255,255,255)       # #FFFFFF
+tab_inactive_text   = rgb(220,220,220)       # #DCDCDC
+toolbar_text        = rgb(236,233,236)       # #ECE9EC
+
+# --- Omnibox / address bar ---
+omnibox_background  = rgb(20,20,24)          # #141418
+omnibox_text        = rgb(236,233,236)       # #ECE9EC
+omnibox_selection_bg   = rgb(85,79,224)      # #554FE0
+omnibox_selection_text = rgb(255,255,255)    # #FFFFFF
+
+# --- Icons / buttons ---
+button_icon_active   = rgb(236,233,236)      # #ECE9EC
+button_icon_inactive = rgb(127,132,142)      # #7F848E
+button_icon_hover    = rgb(249,171,128)      # #F9AB80 apricot
+
+# --- Links / highlights ---
+link_color   = rgb(97,175,239)               # #61AFEF cyan/blue
+highlight    = rgb(219,108,130)              # #DB6C82 rose
+
+# --- Bookmarks bar ---
+bookmark_bar_background = rgb(10,10,10)      # #0A0A0A
+bookmark_text           = rgb(236,233,236)   # #ECE9EC
+bookmark_text_active    = rgb(255,255,255)   # #FFFFFF
+
+# --- Incognito ---
+incognito_frame_color             = rgb(10,10,10)   # #0A0A0A
+incognito_tab_active_background   = rgb(20,20,24)   # #141418
+incognito_tab_active_text         = rgb(255,255,255)# #FFFFFF

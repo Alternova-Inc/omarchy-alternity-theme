@@ -1,0 +1,150 @@
+# Omarchy Config
+# format = "[$directory$git_branch$git_status]($style)$character"
+#
+# [character]
+# error_symbol = "[✗](bold cyan)"
+# success_symbol = "[❯](bold cyan)"
+#
+# [directory]
+# truncation_length = 2
+# truncation_symbol = "…/"
+# repo_root_style = "bold cyan"
+# repo_root_format = "[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style) "
+#
+# [git_branch]
+# format = "[$branch]($style) "
+# style = "italic cyan"
+#
+# [git_status]
+# format     = '[$all_status]($style)'
+# style      = "cyan"
+# ahead      = "⇡${count} "
+# diverged   = "⇕⇡${ahead_count}⇣${behind_count} "
+# behind     = "⇣${count} "
+# conflicted = " "
+# up_to_date = " "
+# untracked  = "? "
+# modified   = " "
+# stashed    = ""
+# staged     = ""
+# renamed    = ""
+# deleted    = ""
+
+
+format = """
+[](color_alternova_rose)\
+$os\
+$username\
+[](bg:color_bg1 fg:color_alternova_rose)\
+$directory\
+[](fg:color_bg1 bg:color_bg1)\
+$git_branch\
+$git_status\
+[](fg:color_bg1 bg:color_bg1)\
+[](fg:color_bg1 bg:color_bg1)\
+$docker_context\
+$conda\
+$pixi\
+[](fg:color_bg1 bg:color_bg1)\
+$time\
+[ ](fg:color_alternova_rose)\
+$line_break$character"""
+
+palette = 'alternity'
+
+[palettes.alternity]
+color_fg0   = "#FFFFFF"   # bright foreground
+color_bg1   = '#20252d'  # main background
+color_bg3   = "#1e2229"   # chip neutral
+color_blue   = '#61afef' # vivid malibu blue
+color_green  = '#2bbac5' # swapped: fountain blue (cyan)
+color_aqua   = '#689d6a' # swapped: vivid green
+color_orange = '#DA6F3F' # neon orange (custom override)
+color_purple = '#d070ff' # neon purple (custom override)
+color_red    = '#ef596f' # vivid coral red
+color_yellow = '#D29B40' # rich golden yellow (custom override)
+color_transparent = '#00000000'
+
+# Brand accents
+color_alternova_purple  = "#554FE0"  # Royal Blue (branch)
+color_alternova_rose   = "#db6c82"  # Brilliant Rose (directory & dots)
+color_alternova_apricot= "#F9AB80"  # Apricot (caret)
+color_alternova_cyan = "#61afef"
+
+[os]
+disabled = false
+style = "bold bg:color_alternova_rose fg:color_fg0"
+format = "[ $symbol alternity ]($style)"
+
+
+[os.symbols]
+Windows = "󰍲"
+Ubuntu = "󰕈"
+SUSE = ""
+Raspbian = "󰐿"
+Mint = "󰣭"
+Macos = "󰀵"
+Manjaro = ""
+Linux = "󰌽"
+Gentoo = "󰣨"
+Fedora = "󰣛"
+Alpine = ""
+Amazon = ""
+Android = ""
+Arch = "󰣇"
+Artix = "󰣇"
+EndeavourOS = ""
+CentOS = ""
+Debian = "󰣚"
+Redhat = "󱄛"
+RedHatEnterprise = "󱄛"
+Pop = ""
+
+[username]
+show_always = true
+style_user = "bg:color_alternova_rose fg:color_fg0"
+style_root = "bg:color_alternova_rose fg:color_fg0"
+format = '[ ]($style)' # no user name
+
+[directory]
+style = "bold fg:color_alternova_rose bg:color_bg1"
+format = "[ $path ]($style)"
+truncation_length = 0 # dont truncate
+truncation_symbol = "…/"
+truncate_to_repo = false   # don't cut off at git repo root
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = "󰝚 "
+"Pictures" = " "
+"Developer" = "󰲋 "
+
+[git_branch]
+symbol = ""
+style = "bold bg:color_alternova_rose"
+format = '[[ $symbol $branch ](bold fg:color_fg0 bg:color_bg1)]($style)'
+
+[git_status]
+style = "bold bg:color_alternova_rose"
+format = '[[($all_status$ahead_behind )](bold fg:color_alternova_rose bg:color_bg1)]($style)'
+
+[time]
+disabled = false
+use_12hr = true
+# time_format = "%R"
+time_format = "%-I:%M %p"
+style = "bold bg:color_alternova_rose"
+format = '[[  $time ](bold fg:color_fg0 bg:color_alternova_rose)]($style)'
+
+[line_break]
+disabled = false
+
+[character]
+disabled = false
+success_symbol = '[](bold fg:color_alternova_cyan)'
+error_symbol = '[](bold fg:color_red)'
+vimcmd_symbol = '[](bold fg:color_green)'
+vimcmd_replace_one_symbol = '[](bold fg:color_purple)'
+vimcmd_replace_symbol = '[](bold fg:color_purple)'
+vimcmd_visual_symbol = '[](bold fg:color_yellow)'

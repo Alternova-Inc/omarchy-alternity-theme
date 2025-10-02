@@ -1,0 +1,118 @@
+# Alternity — eza theme
+
+colourful: true
+
+# ---- palette helpers (just comments for reference) ----
+# neutral text:  #ECE9EC
+# muted:         #7F848E
+# base:          #111111
+# overlay:       #1E2229
+# rose:          #DB6C82
+# purple:        #554FE0
+# apricot:       #F9AB80
+# cyan/blue:     #61AFEF
+# green (ODP):   #98C379
+# red (ODP):     #E06C75
+# yellow (ODP):  #E5C07B
+
+# ----- file names (Name column) -----
+filekinds:
+  normal:       { foreground: "#ECE9EC" }
+  directory:    { foreground: "#DB6C82" }  # folders = rose
+  symlink:      { foreground: "#61AFEF" }
+  pipe:         { foreground: "#7F848E" }
+  block_device: { foreground: "#F9AB80" }
+  char_device:  { foreground: "#F9AB80" }
+  socket:       { foreground: "#554FE0" }
+  special:      { foreground: "#554FE0" }
+  executable:   { foreground: "#98C379" }
+  mount_point:  { foreground: "#61AFEF" }
+
+# ----- permissions column (all apricot) -----
+perms:
+  user_read:          { foreground: "#ECE9EC" }
+  user_write:         { foreground: "#ECE9EC" }
+  user_execute_file:  { foreground: "#ECE9EC" }
+  user_execute_other: { foreground: "#ECE9EC" }
+  group_read:         { foreground: "#ECE9EC" }
+  group_write:        { foreground: "#ECE9EC" }
+  group_execute:      { foreground: "#ECE9EC" }
+  other_read:         { foreground: "#ECE9EC" }
+  other_write:        { foreground: "#ECE9EC" }
+  other_execute:      { foreground: "#ECE9EC" }
+  special_user_file:  { foreground: "#ECE9EC" }
+  special_other:      { foreground: "#ECE9EC" }
+  attribute:          { foreground: "#ECE9EC" }
+
+# ----- size column (all apricot) -----
+size:
+  major:        { foreground: "#F9AB80" }
+  minor:        { foreground: "#F9AB80" }
+  number_byte:  { foreground: "#F9AB80" }
+  number_kilo:  { foreground: "#F9AB80" }
+  number_mega:  { foreground: "#F9AB80" }
+  number_giga:  { foreground: "#F9AB80" }
+  number_huge:  { foreground: "#F9AB80" }
+  unit_byte:    { foreground: "#F9AB80" }
+  unit_kilo:    { foreground: "#F9AB80" }
+  unit_mega:    { foreground: "#F9AB80" }
+  unit_giga:    { foreground: "#F9AB80" }
+  unit_huge:    { foreground: "#F9AB80" }
+
+# ----- user/group column (user = rose) -----
+users:
+  user_you:     { foreground: "#DB6C82" }
+  user_root:    { foreground: "#DB6C82" }   # keep consistent rose (change to #554FE0 if you prefer purple for root)
+  user_other:   { foreground: "#DB6C82" }
+  group_yours:  { foreground: "#7F848E" }
+  group_other:  { foreground: "#7F848E" }
+  group_root:   { foreground: "#7F848E" }
+
+# ----- links (hardlink count) -----
+links:
+  normal: { foreground: "#7F848E" }
+  multi_link_file: { foreground: "#61AFEF" }
+
+# ----- git decorators -----
+git:
+  new:        { foreground: "#98C379" }
+  modified:   { foreground: "#F9AB80" }
+  deleted:    { foreground: "#E06C75" }
+  renamed:    { foreground: "#61AFEF" }
+  typechange: { foreground: "#554FE0" }
+  ignored:    { foreground: "#7F848E" }
+  conflicted: { foreground: "#DB6C82" }
+
+git_repo:
+  branch_main:  { foreground: "#ECE9EC" }
+  branch_other: { foreground: "#554FE0" }
+  git_clean:    { foreground: "#98C379" }
+  git_dirty:    { foreground: "#DB6C82" }
+
+# ----- misc columns -----
+punctuation: { foreground: "#7F848E" }
+date:        { foreground: "#ECE9EC" }   # Date Modified = purple
+inode:       { foreground: "#7F848E" }
+blocks:      { foreground: "#7F848E" }
+header:      { foreground: "#7F848E" }
+octal:       { foreground: "#61AFEF" }
+flags:       { foreground: "#554FE0" }
+
+symlink_path:        { foreground: "#61AFEF" }
+control_char:        { foreground: "#61AFEF" }
+broken_symlink:      { foreground: "#E06C75" }
+broken_path_overlay: { foreground: "#7F848E" }
+
+# Optional buckets if you use --classify --colour-scale by type
+file_type:
+  image:      { foreground: "#DB6C82" }
+  video:      { foreground: "#E06C75" }
+  music:      { foreground: "#98C379" }
+  lossless:   { foreground: "#61AFEF" }
+  crypto:     { foreground: "#7F848E" }
+  document:   { foreground: "#ECE9EC" }
+  compressed: { foreground: "#554FE0" }
+  temp:       { foreground: "#F9AB80" }
+  compiled:   { foreground: "#61AFEF" }
+  build:      { foreground: "#7F848E" }
+  source:     { foreground: "#61AFEF" }

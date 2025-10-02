@@ -1,0 +1,6 @@
+@define-color selected-text #db6c82;  /* Alternity rose for selection highlight */
+@define-color text #e6e6e6;           /* light gray text */
+@define-color base #282c34;           /* dark base background */
+@define-color border #db6c82;         /* rose borders */
+@define-color foreground #e6e6e6;     /* general text/UI */
+@define-color background #1e2229;     /* slightly lighter bg for contrast */

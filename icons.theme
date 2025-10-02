@@ -1,0 +1,38 @@
+# Alternity LS_COLORS — true-color, muted rose directories
+
+# Directories: muted Alternova rose (#C96F83) — non-bold
+DIR 38;2;201;111;131
+
+LINK 01;36
+EXEC 01;32
+FIFO 33
+SOCK 38;2;85;79;224      # brand purple-ish socket
+BLK  01;33
+CHR  01;33
+ORPHAN 01;31
+MISSING 01;31
+
+# Archives
+.tar 01;31
+.tgz 01;31
+.zip 01;31
+.gz  01;31
+.xz  01;31
+.bz2 01;31
+
+# Code / config (cyan), docs apricot
+.md      38;2;249;171;128
+.lua     38;2;85;79;224
+.toml    01;36
+.css     01;36
+.js      01;36
+.ts      01;36
+.py      01;36
+.sh      01;36
+
+# Images (soft purple)
+.png 38;2;85;79;224
+.jpg 38;2;85;79;224
+.jpeg 38;2;85;79;224
+.svg 38;2;85;79;224
+.webp 38;2;85;79;224

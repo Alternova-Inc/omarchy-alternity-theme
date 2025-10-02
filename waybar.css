@@ -1,0 +1,66 @@
+/* === Alternity · pulseaudio accents === */
+/* Palette (make sure these match your file manager) */
+@define-color background #1e1e22;   /* your soft gray */
+@define-color foreground #e0e0e0;
+@define-color accent     #db6c82;   /* rose */
+
+/* Icon in the bar */
+#pulseaudio {
+  color: @foreground;                /* default icon color */
+  padding: 0 12px;                   /* gentle spacing */
+}
+
+/* Hover affordance (subtle) */
+#pulseaudio:hover {
+  color: @accent;
+  background-color: alpha(@accent, 0.08);
+  border-radius: 6px;
+}
+
+/* Muted state = softer rose */
+#pulseaudio.muted {
+  color: alpha(@accent, 0.65);
+}
+
+/* Bluetooth route (Waybar adds this class when BT is active) */
+#pulseaudio.bluetooth {
+  color: @accent;
+}
+
+/* --- Tooltip (popup) --- */
+tooltip {
+  background-color: shade(@background, 1.1);
+  color: @foreground;
+  border: 1px solid alpha(@accent, 0.4);
+  border-radius: 8px;
+}
+
+tooltip label { color: @foreground; }
+
+/* Sliders in tooltip (per-app + master) */
+tooltip scale > trough {
+  background-color: shade(@background, 1.3);
+  border-radius: 9999px;
+  min-height: 6px;
+}
+tooltip scale > trough > progress {
+  background-color: @accent;         /* rose fill */
+  border-radius: 9999px;
+}
+tooltip scale > slider {
+  background-color: @accent;         /* rose knob */
+  border-radius: 9999px;
+  border: none;
+  box-shadow: none;
+}
+
+/* Level meters (if shown) */
+tooltip levelbar > trough {
+  background-color: shade(@background, 1.3);
+  border-radius: 6px;
+}
+tooltip levelbar > trough > block,
+tooltip levelbar > trough > indicator {
+  background-color: @accent;
+  border-radius: 6px;
+}

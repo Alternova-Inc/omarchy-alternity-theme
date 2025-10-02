@@ -1,0 +1,47 @@
+/* === Alternity · SwayOSD (scoped + variable-driven) === */
+@define-color background-color #282c34;  /* base */
+@define-color border-color      #db6c82;  /* rose */
+@define-color label             #abb2bf;  /* foreground */
+@define-color image             #abb2bf;  /* icons */
+@define-color progress          #db6c82;  /* filled bar */
+
+/* Only match SwayOSD windows (don’t affect Waybar or other apps) */
+window.swayosd,
+.swayosd-window,
+window.osd-window {
+  background-color: alpha(@background-color, 0.92);
+  border: 1px solid alpha(@border-color, 0.35);
+  border-radius: 14px;
+  padding: 10px;
+}
+
+/* Progress bar / sliders inside the OSD */
+.swayosd-progress,
+window.swayosd progressbar,
+window.osd-window progressbar {
+  min-height: 12px;
+}
+
+.swayosd-progress trough,
+window.swayosd progressbar > trough,
+window.osd-window progressbar > trough {
+  background-color: shade(@background-color, 1.2);
+  border-radius: 9999px;
+}
+
+.swayosd-progress trough > progress,
+window.swayosd progressbar > trough > progress,
+window.osd-window progressbar > trough > progress {
+  background-color: @progress;
+  border-radius: 9999px;
+}
+
+/* Text + icons */
+window.swayosd label,
+window.osd-window label {
+  color: @label;
+}
+window.swayosd image,
+window.osd-window image {
+  color: @image;
+}

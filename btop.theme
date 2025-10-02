@@ -1,0 +1,71 @@
+# Alternity — Brand btop Theme
+
+# --- Base text & background ---
+theme[main_bg]="#282c34"          # Background
+theme[main_fg]="#e6e6e6"          # Main foreground (soft white)
+theme[inactive_fg]="#7f848e"      # Dim gray
+theme[graph_text]="#e6e6e6"       # Text drawn over graphs
+
+# --- Titles & highlights ---
+theme[title]="#61afef"            # Cyan titles (req. 3)
+theme[hi_fg]="#61afef"            # Key-hint highlight (cyan to match titles)
+
+# --- Selection in process list ---
+theme[selected_bg]="#3e4451"      # Dark neutral highlight
+theme[selected_fg]="#ffffff"      # Selected row text
+
+# --- Box outlines (req. 1: ALL ROSE) ---
+# If you want thinner visual weight, use a darker rose: #C46A7C
+theme[cpu_box] ="#db6c82"
+theme[mem_box] ="#db6c82"
+theme[net_box] ="#db6c82"
+theme[proc_box]="#db6c82"
+theme[div_line]="#db6c82"         # divider lines also rose
+
+# --- Process list accents (req. 4: Rose) ---
+theme[proc_misc]="#db6c82"
+
+# --- Meter backgrounds ---
+theme[meter_bg]="#3e4451"
+
+# --- Temperature graph (keep intuitive: cool→hot) ---
+theme[temp_start]="#98c379"       # green
+theme[temp_mid]  ="#e5c07b"       # yellow
+theme[temp_end]  ="#e06c75"       # red
+
+# --- CPU usage graph (req. 2 & 5: G→Y→R) ---
+theme[cpu_start]="#98c379"        # green (low usage = good)
+theme[cpu_mid]  ="#e5c07b"        # yellow
+theme[cpu_end]  ="#e06c75"        # red (high usage = bad)
+
+# --- Per-process usage gradients (threads / mem / cpu) (req. 5) ---
+theme[process_start]="#98c379"    # green
+theme[process_mid]  ="#e5c07b"    # yellow
+theme[process_end]  ="#e06c75"    # red
+
+# --- Memory / Disk meters (semantic + readable) ---
+# free/cached/available kept distinct; "used" emphasized in red
+theme[free_start]     ="#56b6c2"  # cyan
+theme[free_mid]       ="#56b6c2"
+theme[free_end]       ="#56b6c2"
+
+theme[cached_start]   ="#61afef"  # bright cyan/blue
+theme[cached_mid]     ="#61afef"
+theme[cached_end]     ="#61afef"
+
+theme[available_start]="#98c379"  # green
+theme[available_mid]  ="#98c379"
+theme[available_end]  ="#98c379"
+
+theme[used_start]     ="#e06c75"  # red (used = pressure)
+theme[used_mid]       ="#e06c75"
+theme[used_end]       ="#e06c75"
+
+# --- Network graphs (still read as utilization: G→Y→R) ---
+theme[download_start] ="#98c379"  # green
+theme[download_mid]   ="#e5c07b"  # yellow
+theme[download_end]   ="#e06c75"  # red
+
+theme[upload_start]   ="#98c379"
+theme[upload_mid]     ="#e5c07b"
+theme[upload_end]     ="#e06c75"
