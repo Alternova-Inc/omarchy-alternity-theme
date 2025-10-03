@@ -12,7 +12,7 @@ A custom Alternity theme for [Omarchy](https://omarchy.org/), created by Alterno
 
 ## Installation
 
-Use the built-in installation script (available after version 1.4.0):
+Use the omarchy built-in installation:
 
 Dark:
 ```bash
