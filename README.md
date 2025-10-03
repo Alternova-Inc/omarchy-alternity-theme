@@ -1,9 +1,12 @@
 
 # Alternity Theme for Omarchy
 
+
 ![Omarchy Alternity](./assets/title.png)
 
-A sophisticated, dark-themed customization for [Omarchy](https://omarchy.org/), meticulously crafted by Alternova. This theme provides a cohesive visual experience across Hyprland, Waybar, terminals, and various applications, featuring deep neutrals, purple accents, and carefully selected backgrounds.
+*Thriving human tech*
+
+A sophisticated, dark-themed customization for [Omarchy](https://omarchy.org/), meticulously crafted by Alternova using our brand colors. This theme elevates the coding space for our team, providing a cohesive and professional visual experience across Hyprland window manager, Waybar, terminals, Neovim, and various applications. Featuring deep neutrals, striking rose accents, and a curated selection of backgrounds, it creates an inspiring environment that enhances productivity and focus.
 
 ## Screenshots
 
