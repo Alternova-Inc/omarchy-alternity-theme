@@ -24,16 +24,11 @@ A sophisticated, dark-themed customization for [Omarchy](https://omarchy.org/), 
 
 This theme includes the following background images:
 
-### Alternity Backgrounds
-
 ![Alternity Background 1](./backgrounds/alternity-1.png)
 ![Alternity Background 2](./backgrounds/alternity-2.png)
 ![Alternity Background 3](./backgrounds/alternity-3.png)
 ![Alternity Background 4](./backgrounds/alternity-4.png)
 ![Alternity Background 5](./backgrounds/alternity-5.png)
-
-### Alternova Background
-
 ![Alternova Background 1](./backgrounds/alternova-1.png)
 
 ## Installation
