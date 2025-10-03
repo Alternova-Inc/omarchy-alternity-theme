@@ -48,6 +48,8 @@ After installation, apply the theme:
 omarchy-theme-set alternity
 ```
 
+If you want to install the entire development environment (for Alternova team members), use: https://github.com/Alternova-Inc/omarchy-dev-setup
+
 ## Configuration Files
 
 This theme customizes the following components:
